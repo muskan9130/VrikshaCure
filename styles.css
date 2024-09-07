@@ -55,12 +55,13 @@ body, html {
   background-image: url('/images/first.jpg');
   background-size: cover;
   height: 500px;
-  display: flex;
+  display:flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: black;
   margin-top: -20px;
+  
 }
 
 .hero-content h1 {
@@ -134,4 +135,12 @@ body, html {
   justify-content: center;
   align-items: center;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.view{
+  background-image: url('/images/second.jpg');
+  background-size: cover;
+  height: 500px;
+  color: black;
+  margin-top: 20px;
 }
