@@ -86,7 +86,117 @@
             <img src="images/fourth.png" >
         </div>
     </section>
-
+    <section class="video-section">
+        <div class="video-container">
+            <div class="video-wrapper">
+                <video controls poster="video-thumbnail.jpg">
+                    <source src="herbal-garden-tour.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="discover-container">
+            <h1 class="discover">Discover Nature's Treasures</h1>
+            <p class="subtitle">Unlock the secrets of medicinal plants</p>
+            <div class="scroll-container">
+                <button class="scroll-arrow left-arrow" id="scrollLeft">&#8249;</button>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="images/discover1.jpg" >
+                        <p>Healing Herbs</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/discover2.jpg" >
+                        <p>Holistic Wellness</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/discover3.jpg" >
+                        <p>Interactive Garden</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/discover4.jpg">
+                        <p>Plant Life</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/discover5.jpeg">
+                        <p>Plant Life</p>
+                    </div>
+                </div>
+                <button class="scroll-arrow right-arrow" id="scrollRight">&#8250;</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="blogs-container">
+            <h1 class="blogs">Latest Herbal Discoveries</h1>
+    
+            <div class="scroll-container">
+                <button class="scroll-arrow left-arrow" id="scrollLeft">&#8249;</button>
+                <div class="blog-container">
+                    <div class="blog">
+                        <img src="cat-plant.jpg" >
+                        <p>Unlocking Nature's Secrets</p>
+                        <p>Discover the latest research on medicinal plants that can change your health game. Dive into nature's pharmacy today! </p>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                    <div class="blog">
+                        <img src="herbal-drink.jpg" >
+                        <p>Herbal Remedies for Modern Life</p>
+                        <p>From headaches to heartaches, find out how ancient wisdom meets modern science in herbal healing.</p>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                    <div class="blog">
+                        <img src="garden.jpg" >
+                        <p>Meet the Plant Whisperers</p>
+                        <p>Join our community of herbal enthusiasts and learn from the best in the business. Your green thumb awaits!</p>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                    <div class="blog">
+                        <img src="herbal-medicine.jpg" >
+                        <p>The Future of Herbal Medicine</p>
+                        <p>Explore groundbreaking innovations in herbal medicine that are reshaping health and wellness. Don't miss out!</p>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                    <!-- Add more blogs as needed -->
+                </div>
+                <button class="scroll-arrow right-arrow" id="scrollRight">&#8250;</button>
+            </div>
+            <div class="gallery-container">
+                <h1>Herbal Plant Gallery</h1>
+                <div class="scrolling-container">
+                    <div class="scroll-content">
+                        <div class="image"><img src="image1.jpg" ></div>
+                        <div class="image"><img src="image2.jpg" ></div>
+                        <div class="image"><img src="image3.jpg" ></div>
+                        <div class="image"><img src="image4.jpg" ></div>
+                        <div class="image"><img src="image5.jpg" ></div>
+                        <div class="image"><img src="image6.jpg" ></div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section>
+        <h1 class="join-us">Join Our Herbal Adventure!</h1>
+        <div class="social-icons">
+            <div class="social-icon facebook">f</div>
+            <div class="social-icon twitter">t</div>
+            <div class="social-icon instagram">i</div>
+        </div>
+        <div class="contact-form">
+            <h2>Get in Touch!</h2>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send it!</button>
+            </form>
+        </div>
+            
+            </div>
+    </section>
     <script>
         document.querySelector('.start-button').addEventListener('click', function() {
             alert('Your herbal journey begins!');
@@ -95,6 +205,32 @@
         document.querySelector('.join-button').addEventListener('click', function() {
             alert('Welcome to our herbal community!');
         });
+        document.getElementById('scrollRight').onclick = function () {
+    document.querySelector('.blog-container').scrollBy({ 
+        left: 220, 
+        behavior: 'smooth' 
+    });
+};
+
+document.getElementById('scrollLeft').onclick = function () {
+    document.querySelector('.blog-container').scrollBy({ 
+        left: -220, 
+        behavior: 'smooth' 
+    });
+};
+document.getElementById('scrollRight').onclick = function () {
+    document.querySelector('.blog-container').scrollBy({ 
+        left: 220, // Adjust this value based on blog width + gap
+        behavior: 'smooth' 
+    });
+};
+
+document.getElementById('scrollLeft').onclick = function () {
+    document.querySelector('.blog-container').scrollBy({ 
+        left: -220, // Adjust this value based on blog width + gap
+        behavior: 'smooth' 
+    });
+};
     </script>
 </body>
 </html>
