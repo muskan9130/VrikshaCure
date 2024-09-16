@@ -15,7 +15,7 @@ behavior: 'smooth'
 document.getElementById('scrollLeft').onclick = function () {
 document.querySelector('.blog-container').scrollBy({ 
 left: -220, 
-behavior: 'smooth' 
+behavior: "smooth" 
 });
 };
 document.getElementById('scrollRight').onclick = function () {
