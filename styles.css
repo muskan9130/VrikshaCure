@@ -114,7 +114,6 @@ body, html {
 }
 
 .subtitle {
-  font-size: 1.2em;
   color: #666;
   margin-bottom: 30px;
 }
@@ -135,7 +134,7 @@ body, html {
 }
 
 .card-container::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Opera */
+  display: none;
 }
 
 .card {
@@ -151,13 +150,14 @@ body, html {
 
 .card img {
   width: 100%;
-  height: auto;
+  height: 100px;
   border-radius: 10px;
   margin-bottom: 15px;
 }
 
 .card p {
-  font-size: 1.2em;
+  font-size: 30px;
+  font-weight: bold;
   color: #333;
 }
 
